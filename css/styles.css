@@ -22,6 +22,10 @@ a {text-decoration: none;}
 }
 .page-header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow:
+            0px 2px 4px rgba(46, 47, 66, 0.08),
+            0px 4px 6px rgba(46, 47, 66, 0.08),
+            0px 8px 8px rgba(46, 47, 66, 0.08);
 }
 .header-container {
     display: flex;
@@ -81,6 +85,11 @@ a {text-decoration: none;}
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-link:hover,
+.contacts-link:focus {
+    color: #404bbf;
 }
 .logo {font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -141,6 +150,7 @@ a {text-decoration: none;}
                     color: #fff;
                     background-color: #4d5ae5;
                     cursor: pointer;
+                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
                 }
                 .hero-btn:hover,
                 .hero-btn:focus {
@@ -154,13 +164,13 @@ a {text-decoration: none;}
 /*icon */
 .benefits-icon {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    margin-bottom: 8px;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    color: #2e2f42;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        margin-bottom: 8px;
+        background-color: #f4f4fd;
+        border: 1px solid #e7e9fc;
+        border-radius: 4px;
 }
 .feature-icon {
     color: #2e2f42;
@@ -169,9 +179,7 @@ a {text-decoration: none;}
     width: 64px;
     height: 64px;
 }
-.benefits-icon svg rect {
-    display: none;
-}
+
 .visually-hidden {
 position: absolute;
 white-space: nowrap;
@@ -256,23 +264,21 @@ text-align: center;
 .team-social-link {
     width: 40px;
     height: 40px;
-    background-color: var(--cloud);
+    background-color: #4d5ae5;
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-icon {
-    fill: var(--iris);
+    fill: #f4f4fd;
 }
 
 .team-social-link:hover,
 .team-social-link:focus {
-    background-color: var(--iris);
+    background-color: #404bbf;
 }
 
 .team-social-link:hover .team-social-icon,
