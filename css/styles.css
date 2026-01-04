@@ -23,9 +23,9 @@ a {text-decoration: none;}
 .page-header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow:
-            0px 2px 4px rgba(46, 47, 66, 0.08),
-            0px 4px 6px rgba(46, 47, 66, 0.08),
-            0px 8px 8px rgba(46, 47, 66, 0.08);
+            0px 2px 1px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
     display: flex;
@@ -42,12 +42,15 @@ a {text-decoration: none;}
 }
 
 .nav-link {
-    position: relative;
+    display: block;
         padding: 24px 0;
-        color: #2e2f42;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #2e2f42;
+            position: relative;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link.current {
@@ -151,6 +154,7 @@ a {text-decoration: none;}
                     background-color: #4d5ae5;
                     cursor: pointer;
                     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
                 }
                 .hero-btn:hover,
                 .hero-btn:focus {
@@ -169,7 +173,7 @@ a {text-decoration: none;}
         height: 112px;
         margin-bottom: 8px;
         background-color: #f4f4fd;
-        border: 1px solid #e7e9fc;
+        border: 1px solid #8e8f99;
         border-radius: 4px;
 }
 .feature-icon {
@@ -239,6 +243,10 @@ display: flex;
 width: calc((100% - 72px) / 4);
 border-radius: 0 0 4px 4px;
 background-color: #fff;
+box-shadow:
+        0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
                 
 .team-content {
